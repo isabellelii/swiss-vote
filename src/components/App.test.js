@@ -1,8 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
 
-import App from "./App";
-import { Map, ResultsTable } from "./Map";
+import { ResultsTable } from "./App";
 
 const mockResult = {
   description: {
