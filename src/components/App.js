@@ -18,8 +18,7 @@ class App extends Component {
     .catch(error => console.error('FetchError:', error));
   }
 
-  handleChange = e => {
-    const selection = this.state.results[e.target.value];
+  handleChange = selection => {
     this.setState({ selection });
   }
 
