@@ -29,7 +29,9 @@ class App extends Component {
       <div>
         <Selector {...this.state} onChange={this.handleChange} />
       <figure>
-       <Map {...this.state.selection} />
+       <Map {...this.state.selection}>
+         <ResultsTable />
+       </Map>
       </figure>
       </div>
       )

@@ -43,7 +43,7 @@ class Map extends Component {
     const { description, results } = this.props;
     return (
       <canvas height={538} width={840} ref="canvas">
-        <ResultsTable description={description} results={results} />
+        {React.cloneElement(this.props.children, { description, results })}
       </canvas>
     );
   }
