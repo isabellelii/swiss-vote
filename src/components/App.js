@@ -8,7 +8,7 @@ class App extends Component {
     selection: "",
     results: []
   }
-  // lifecycle method to fetch data from json file and render them in a filter
+
   componentDidMount() {
     fetch('./swiss-vote-results-sample.json')
     .then(function(response) {
@@ -22,7 +22,6 @@ class App extends Component {
     this.setState({ selection });
   }
 
-  // render the selection function to handle the onChange in the filter 
   render() {
     return (
       <div>
